@@ -1,1 +1,12 @@
-/* You can add global styles to this file, and also import other style files */
+/* UTILS */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+    padding: var(--spacing-8) var(--spacing-16) var(--spacing-8) var(--spacing-16);
+  }
