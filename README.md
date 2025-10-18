@@ -1,59 +1,58 @@
-# Dutti
+# DUTTI
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.1.4.
+![Dutti](/src/assets/dutti-logo.png)
 
-## Development server
+## Project Info
 
-To start a local development server, run:
+- Frontend Project in Angular 19, TypeScript, and SCSS for a fake **DUTTI** website.
+  The main feature of the design is a product grid. This grid must be populated by making a fetch call to the following API endpoint.
 
-```bash
-ng serve
-```
+- Tools: Visual Studio Code, Chrome Developer Tools, Git Fork.
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+- Best Practices: Atomic Design, Responsive Design, Mobile First, Pixel Perfect, Semantic HTML, Introduction to Web Accessibility, Design System.
 
-## Code scaffolding
+#### [Repo Client](https://github.com/inigoestebangomez/dutti)
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+## Design
 
-```bash
-ng generate component component-name
-```
+As an Angular 19 exercise, an attempt has been made to replicate the brand image of a popular clothing brand.
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+**Desktop Grid Header**
+![web desktop header](/src/assets/Captura%20de%20pantalla%202025-10-18%20a%20las%2018.07.19.png)
 
-```bash
-ng generate --help
-```
+**Desktop Grid 4 ítems + Hover**
+![web desktop grid 4](/src/assets/Captura%20de%20pantalla%202025-10-18%20a%20las%2018.07.59.png)
 
-## Building
+**Desktop Footer**
+![web desktop footer](/src/assets/Captura%20de%20pantalla%202025-10-18%20a%20las%2018.08.09.png)
 
-To build the project run:
+## HTML
 
-```bash
-ng build
-```
+**Semantic HTML** using **best practices** from **W3Schools**. Classes have been developed to facilitate componentization and achieve low specificity.
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+## CSS
 
-## Running unit tests
+CSS has been written using variables to facilitate maintenance, sustainability, and web growth.
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+The code employs CSS best practices:
 
-```bash
-ng test
-```
+- **Normalize**
+- **Display Flex & Grid**
+- **CSS variables**
+- **Mixins & Functions**
+- **Rems**
+- **Low Specificity**
 
-## Running end-to-end tests
+All this under a **scalable** and **readable architecture**.
 
-For end-to-end (e2e) testing, run:
+## Client Info
 
-```bash
-ng e2e
-```
+- **Grid 4** - Default functionality that shows a 4-column grid for 1440px screens.
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+## Links
 
-## Additional Resources
+[LinkedIn](https://www.linkedin.com/in/inigo-esteban-gomez/)
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+[Portfolio](https://inigoesteban.vercel.app)
+
+[GitHub](https://github.com/inigoestebangomez)
