@@ -1,6 +1,32 @@
 <header>
-    <h1 class="sr-only">Dutti´s Website</h1>
+  <h1 class="sr-only">Dutti´s Website</h1>
+  <div class="header-container">
+    <button (click)="toggleMenu()">
+      <svg
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+      >
+        <path
+          d="M3 12h18M3 6h18M3 18h18"
+          stroke-width="1.5"
+          stroke-linecap="round"
+        />
+      </svg>
+    </button>
     <a href="/">
-        <img class="logo-dutti" src="assets/dutti-logo.png" alt="Dutti´s Homepage"/>
+      <img
+        class="logo-dutti"
+        src="assets/dutti-logo.png"
+        alt="Dutti´s Homepage"
+      />
     </a>
+    <div class="header-links">
+      <a href="#">BUSCAR</a>
+      <a href="#">INICIAR SESIÓN</a>
+      <a href="#">CESTA</a>
+    </div>
+  </div>
 </header>

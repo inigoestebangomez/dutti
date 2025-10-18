@@ -1,1 +1,19 @@
-<p>products works!</p>
+<article class="products-grid">
+@for (product of productsDutti; track product.id) {
+  <div class="product-card">
+    <img
+      [src]="product.bundleProductSummaries?.[0]?.detail?.xmedia?.[0]?.xmediaItems?.[0]?.medias?.[0]?.url
+          ?? 'assets/placeholder.jpg'"
+      [alt]="product.name"
+      class="img"
+    />
+    <div class="info">
+      <h3>{{ product.name }}</h3>
+      <p class="price">
+        {{ product.bundleProductSummaries?.[0]?.detail?.price?.formattedValue
+            ?? 'Price not available' }}
+      </p>
+    </div>
+  </div>
+}
+</article>

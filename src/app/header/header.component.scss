@@ -1,9 +1,44 @@
 header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding-top: var(--spacing-12);
+    padding-bottom: var(--spacing-12);
+    height: var(--header-height);
+    /* WHEN SCROLLING */
+    position: fixed;
+    left: 0;
+    right: 0;
+    background-color: var(--color-white);
+    z-index: var(--z-index-1);
 }
-
+.header-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    margin: 0 auto;
+    padding-left: var(--spacing-16);
+    padding-right: var(--spacing-16);
+}   
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-self: start;
+}
 .logo-dutti {
     width: 6rem;
+    height: auto;
+    display: flex;
+    justify-self: center;
+}
+.header-links {
+    display: flex;
+    justify-self: end;
+    gap: var(--spacing-32);
+    padding-right: var(--spacing-16);
+}
+.header-links a {
+    font-family: var(--font-family);
+    font-size: 0.9rem;
+    text-decoration: none;
+    color: var(--color-black);
 }

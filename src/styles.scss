@@ -1,12 +1,118 @@
+@font-face {
+  font-family: "FrankRuhlLibre";
+  src: url("../src/assets/fonts/FrankRuhlLibre-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "UrbanGroteskMeBl";
+  src: url("../src/assets/fonts/UrbanGroteskMeBl-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "UrbanGroteskReBo";
+  src: url(../src/assets/fonts/UrbanGroteskReBo-Regular.woff2) format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  vertical-align: baseline;
+}
+
+*::before,
+*::after {
+  display: block;
+}
+
+:root {
+  /* COLORS */
+  --color-white: #ffffff;
+
+  --color-oceanLux-800: #323349;
+  --color-oceanLux-600: #676778;
+  --color-oceanLux-400: #676778;
+
+  --color-black-scale-500: #858585;
+  --color-black-scale-700: #4e4e4e;
+
+  --color-primary-800: #0b2020;
+  --color-primary-900: #091919;
+  --color-primary-700: #405757;
+
+  /* FONTS */
+  --font-family: UrbanGroteskReBo, Helvetica, Arial, sans-serif;
+  --font-weight-regular: 400;
+
+  --font-h3: var(--font-weight-regular) 1.25rem/1.5 var(--font-family);
+  --font-body-20: var(--font-weight-regular) 1.25rem/1.5 var(--font-family);
+  --font-body-16: var(--font-weight-regular) 1rem/1.5 var(--font-family);
+  --font-button-16: var(--font-weight-regular) 1rem/1.5 var(--font-family);
+
+  /* SPACINGS */
+  --spacing-2: 0.125rem;
+  --spacing-4: 0.25rem;
+  --spacing-8: 0.5rem;
+  --spacing-10: 0.625rem;
+  --spacing-12: 0.75rem;
+  --spacing-16: 1rem;
+  --spacing-24: 1.5rem;
+  --spacing-32: 2rem;
+  --spacing-40: 2.5rem;
+  --spacing-48: 3rem;
+  --spacing-60: 3.75rem;
+  --spacing-64: 4rem;
+  --spacing-80: 5rem;
+  --spacing-96: 6rem;
+
+  /* LAYOUT */
+  --header-height: 5rem;
+
+  /* Z-INDEX */
+  --z-index-1: 1;
+  --z-index-2: 2;
+  --z-index-3: 3;
+  --z-index-4: 4;
+  --z-index-5: 5;
+
+  --z-index-header: var(--z-index-1);
+}
+
+body {
+  /* default font styles */
+  color: var(--color-black-700);
+  font-size: var(--font-body-16);
+  font-family: var(--font-family);
+}
+
+h3 {
+  font-size: var(--font-h3);
+}
+
+main {
+  padding-top: var(--header-height);
+}
+
 /* UTILS */
 .sr-only {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    padding: 0;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    border: 0;
-    padding: var(--spacing-8) var(--spacing-16) var(--spacing-8) var(--spacing-16);
-  }
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+  padding: var(--spacing-8) var(--spacing-16) var(--spacing-8) var(--spacing-16);
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

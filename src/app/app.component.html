@@ -1,11 +1,25 @@
-<style>
-</style>
-
 <app-header></app-header>
 <main>
-  <app-products></app-products>
+  <section>
+    <h2 class="sr-only">Products search results</h2>
+    <div class="counter-results-and-layout-actions">
+      <p class="counter-results--desktop">PRODUCTS FOR SALE · XXXXXX</p>
+      <p class="counter-results--mobile">BUY · XXXXXX</p>
+      <div class="layout-actions">
+        <span>FILTER</span>
+        <button>
+          <img src="../images/grid.png" alt="grid-items" class="icon-grid" />
+        </button>
+        <button>
+          <img
+            src="../images/grid-solo.png" alt="solo-items" class="icon-grid" />
+        </button>
+      </div>
+    </div>
+    <div>
+      <app-products></app-products>
+    </div>
+
+  </section>
 </main>
 <app-footer></app-footer>
-
-
-<router-outlet />
