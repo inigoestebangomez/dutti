@@ -1,100 +1,56 @@
-.counter-results-and-layout-actions {
+section{
+  background-color: var(--color-light-gray);
+}
+.filter-results-and-layout-actions {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
   padding-left: var(--spacing-12);
   padding-top: var(--spacing-16);
   padding-bottom: var(--spacing-32);
+  padding-left: var(--spacing-24);
+  padding-right: var(--spacing-24);
+  /* WHEN SCROLLING */
+    position: fixed;
+    left: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.709);
+    z-index: var(--z-index-1);  
 }
-
-@media (min-width: 37.5rem) {
-  .counter-results-and-layout-actions {
-    justify-content: space-between;
-    padding: var(--spacing-8) var(--spacing-16) var(--spacing-8) var(--spacing-16);
-  }
+.filter-results {
+  display: flex;
+  gap: var(--spacing-32);
 }
-
-.counter-results--desktop {
-  display: none;
+.filter-results a{
+  color: var(--color-black);
+  font-size: 0.9rem;
+  cursor: pointer;
 }
-
-.counter-results--mobile {
-  display: block;
-  font: var(--font-body-16);
+#isSelected{
+  font-weight: bold;
 }
-
+.filter-results a:hover, #isSelected:hover{
+  color: var(--color-black-scale-500);
+}
 .layout-actions {
-  display: none;
+  display: flex;
+  gap: var(--spacing-32);
+  font-size: 0.9rem;
 }
-
-@media (min-width: 37.5rem) {
-  .counter-results--desktop {
-    display: block;
-    font: var(--font-body-20);
-    color: var(--color-oceanLux-800);
-  }
-
-  .counter-results--mobile {
-    display: none;
-  }
-
-  .layout-actions {
-    display: block;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: var(--spacing-8);
-    color: var(--color-oceanLux-400);
-    font: var(--font-body-16);
-  }
-}
-
 .icon-grid {
   background-color: transparent;
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 1.2rem;
+  height: 1.2rem;
 }
-
-.yacht-cards {
-  padding-left: var(--spacing-16);
-  padding-right: var(--spacing-16);
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(18.75rem, 1fr));
-  gap: var(--spacing-60);
-  transition: all 0.3s ease-in-out;
-}
-
-/* GRID */
-.yacht-cards.grid {
-  grid-template-columns: repeat(auto-fill, minmax(18.75rem, 1fr));
-  gap: var(--spacing-48) var(--spacing-2);
-}
-
-.yacht-cards.solo {
-  grid-template-columns: repeat(1, minmax(18.75rem, 1fr));
-  gap: var(--spacing-60) var(--spacing-10);
-}
-
-@media (min-width: 37.5rem) {
-  .yacht-cards.solo {
-    grid-template-columns: repeat(2, minmax(18.75rem, 1fr));
-  }
-}
-
-/* LOAD MORE */
-.load-more-wrapper {
+.product-type{
+  font-size: 0.9rem;
+  height: 80px;
   display: flex;
+  align-items: flex-end;
   justify-content: center;
-  padding-top: var(--spacing-64);
-  padding-bottom: var(--spacing-64);
+  padding-bottom: 24px;
+  margin-top: 80px;
 }
-
-.load-button {
-  width: 6.875rem;
-  height: 2.75rem;
-  background-color: transparent;
-  border: 0.063rem solid var(--color-oceanLux-600);
-  border-radius: 0.125rem;
-  color: var(--color-oceanLux-600);
-  cursor: pointer;
+.product-type h3{
+  font-family: var(--font-family);
 }

@@ -1,25 +1,30 @@
 <app-header></app-header>
 <main>
-  <section>
-    <h2 class="sr-only">Products search results</h2>
-    <div class="counter-results-and-layout-actions">
-      <p class="counter-results--desktop">PRODUCTS FOR SALE · XXXXXX</p>
-      <p class="counter-results--mobile">BUY · XXXXXX</p>
-      <div class="layout-actions">
-        <span>FILTER</span>
-        <button>
-          <img src="../images/grid.png" alt="grid-items" class="icon-grid" />
-        </button>
-        <button>
-          <img
-            src="../images/grid-solo.png" alt="solo-items" class="icon-grid" />
-        </button>
-      </div>
+  <h2 class="sr-only">Products search results</h2>
+  <div class="filter-results-and-layout-actions">
+    <div class="filter-results">
+      <a id="isSelected">VER TODO</a>
+      <a>JEANS</a>
+      <a>VESTIR</a>
+      <a>CASUAL</a>
     </div>
+    <div class="layout-actions">
+      <span>FILTROS</span>
+      <button>
+        <img src="../assets/grid-solo.png" alt="solo-items" class="icon-grid" />
+      </button>
+      <button>
+        <img src="../assets/grid.png" alt="grid-items" class="icon-grid" />
+      </button>
+    </div>
+  </div>
+  <div class="product-type">
+    <h3>Pantalones</h3>
+  </div>
+  <section>
     <div>
       <app-products></app-products>
     </div>
-
   </section>
 </main>
 <app-footer></app-footer>

@@ -2,43 +2,33 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 0.05rem;
-
-  @media (max-width: 1024px) { 
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  @media (max-width: 640px) { 
-    grid-template-columns: 1fr;
-  }
 }
 .product-card {
   padding: 0.05rem;
   text-align: center;
   transition: transform 0.2s ease;
-
   &:hover {
     transform: translateY(-4px);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
   }
-
   .img {
     width: 100%;
     height: auto;
-    object-fit: cover;
-    margin-bottom: 0.75rem;
+    object-fit: cover
   }
-
   .info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-family: var(--font-family);
+    padding: 0.5rem 0 1rem 0.5rem;
     h3 {
-      font-size: 1rem;
-      margin: 0 0 0.5rem;
+      font-size: 0.9rem;
       font-weight: 500;
     }
-
     .price {
       font-size: 0.9rem;
-      color: #333;
-      font-weight: 600;
+      color: var(--color-primary-900);
     }
   }
 }
