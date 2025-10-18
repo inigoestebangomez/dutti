@@ -10,4 +10,4 @@ dist
 proxy/node_modules
 proxy/.env
 proxy/.DS_Store
-proxy/dist  
+proxy/dist
