@@ -2,3 +2,12 @@
 node_modules
 .angular
 dist
+
+node_modules
+.env
+.DS_Store
+dist
+proxy/node_modules
+proxy/.env
+proxy/.DS_Store
+proxy/dist  
