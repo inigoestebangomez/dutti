@@ -26,7 +26,7 @@ app.get('/products', async (req, res) => {
     return res.json(cache.data)
   }
 
-  const url = 'https://www.massimodutti.com/itxrest/3/catalog/store/34009450/30359536/productsArray?languageId=-5&appId=1&productIds=56869922%2C56870189%2C53563003%2C53563004%2C56298434%2C53026462%2C56203131%2C55179903%2C55504699%2C55179904%2C56869936%2C56535993'
+  const url = process.env.URL_API
 
   const headers = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
