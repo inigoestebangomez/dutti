@@ -46,7 +46,6 @@ app.get('/products', async (req, res) => {
     'Connection': 'keep-alive'
   }
 
-  // Si has obtenido cookies válidas desde el navegador, pásalas por env var MD_COOKIES
   if (process.env.MD_COOKIES) {
     headers['Cookie'] = process.env.MD_COOKIES
     console.log('🔐 Usando cookies desde MD_COOKIES (env var)')
